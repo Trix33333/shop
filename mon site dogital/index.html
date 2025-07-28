@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Trix — Développement Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Digital Trix</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Sites Web Modernes, Performants & Professionnels</h2>
+    <p>Boostez votre présence en ligne dès aujourd’hui.</p>
+    <a href="#contact" class="btn">Demander un devis</a>
+  </section>
+
+  <section id="services" class="section reveal">
+    <h3>Nos Services</h3>
+    <ul class="cards">
+      <li>
+        <h4>Site Vitrine</h4>
+        <p>Présentez votre activité avec un site sobre, clair et performant.</p>
+      </li>
+      <li>
+        <h4>Site E-Commerce</h4>
+        <p>Vendez vos produits/services avec une boutique en ligne sur mesure.</p>
+      </li>
+      <li>
+        <h4>Optimisation Mobile</h4>
+        <p>Chaque projet est responsive pour une expérience parfaite sur mobile.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="bundles" class="section reveal">
+    <h3>Nos Offres</h3>
+    <div class="bundles">
+      <div class="bundle">
+        <h4>Starter</h4>
+        <p>Site vitrine 1 page<br><strong>499€</strong></p>
+      </div>
+      <div class="bundle">
+        <h4>Pro</h4>
+        <p>Site vitrine complet<br>+ formulaire<br><strong>749€</strong></p>
+      </div>
+      <div class="bundle">
+        <h4>Business</h4>
+        <p>Site e-commerce<br>+ design sur mesure<br><strong>999€</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h3>Contact</h3>
+    <form action="send_mail.php" method="POST" id="contactForm">
+      <input type="text" name="name" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <textarea name="message" placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p class="result"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Digital Trix | trix.digital.off@gmail.com</p>
+  </footer>
+</body>
+</html>
